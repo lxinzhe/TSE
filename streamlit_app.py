@@ -7,7 +7,7 @@ logging.basicConfig(level=15,format='%(message)s')
 
 env = clips.Environment()
 router = clips.LoggingRouter()
-env.add_router
+env.add_router(router)
 
 name = st.text_input("Enter your name")
 env.build('(deftemplate result(slot name))')
